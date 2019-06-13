@@ -1,18 +1,18 @@
 <template>
   <div class="about">
-    <h1 @click="add">About{{ aboutVal }}</h1>
-    <Input v-model="aboutVal" />
-    <Button @click="minus">-About</Button>
+    <h1 @click="add">Test - {{ testVal }}</h1>
+    <Input v-model="testVal" />
+    <Button @click="minus">-Test</Button>
   </div>
 </template>
 
 <script>
 import { mapMutations } from 'vuex';
 export default {
-  name: 'About',
+  name: 'Test',
   data() {
     return {
-      aboutVal: '',
+      testVal: '',
     };
   },
   methods: {
